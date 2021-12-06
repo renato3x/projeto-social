@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Righteous&family=Roboto&display=swap');
+
+:root {
+  --green-primary: #00d97c;
+  --gray-primary: #808080;
+  --blue-primary: #2c80f0;
+  --blue-secondary: #01b0ff;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}

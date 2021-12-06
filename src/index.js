@@ -16,6 +16,7 @@ const mainRoutes = require('./routes/main.routes')
 
 // body parsing
 app.use(express.urlencoded({ extended: false }))
+app.use(express.json())
 
 //uso das rotas
 app.use(mainRoutes)
