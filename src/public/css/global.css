@@ -5,6 +5,7 @@
   --gray-primary: #808080;
   --blue-primary: #2c80f0;
   --blue-secondary: #01b0ff;
+  --body-background: #cfdff4;
 }
 
 * {
@@ -20,4 +21,5 @@ body {
   padding: 0;
   box-sizing: border-box;
   min-height: 100vh;
+  background: var(--body-background);
 }
