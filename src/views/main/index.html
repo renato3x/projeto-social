@@ -6,11 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/main.index.css">
-    <title>Document</title>
+    <title>Seducar</title>
   </head>
   <body>
-    <header>
-      <img src="/img/seducar-logo.png" alt="logo_seducar." class="header-logo">
+    <header id="heading">
+      <button class="hamburguer-menu">
+        <img src="/icons/hamburguer-menu.svg" alt="Menu">
+      </button>
+      <nav id="main-menu" class="show-main-menu">
+        <ul class="navbar">
+          <li class="navbar-item">
+            <a href="#">Página Inicial</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#">Escolas</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#">Projetos</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#">Programas</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#">Sobre nós</a>
+          </li>
+        </ul>
+      </nav>
+      <img src="/img/seducar-logo.png" alt="Logo Seducar" class="header-logo">
       <div class="title">
          <h1>
            Secretaria de Educação 
@@ -25,5 +47,7 @@
         <img src="/icons/gmail.svg" alt="Gmail" class="icon">
       </div>
     </header>
+
+    <script src="/js/hamburgerMenu.js"></script>
   </body>
 </html>

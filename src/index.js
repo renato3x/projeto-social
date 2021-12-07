@@ -23,5 +23,5 @@ app.use(mainRoutes)
 
 //abertura do servidor
 app.listen(3000, () => {
-  console.log('Servidor executando')
+  console.log('Servidor executando http://localhost:3000/')
 })
