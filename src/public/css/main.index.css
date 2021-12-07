@@ -1,0 +1,38 @@
+header {
+    height: 5rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+.header-logo {
+    height: 4rem;
+    width: 4rem;
+
+}
+
+.title h1 {
+    font-size: 1rem;
+    margin: 0%;
+    color: #123362;
+}
+
+.title p {
+    margin: 0%;
+    font-size: .6rem;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding-bottom: .5rem;
+}
+
+.icon {
+    align-self: flex-end;
+    width: 1.3rem;
+    height: 1.3rem;
+}
