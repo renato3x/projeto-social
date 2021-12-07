@@ -3,13 +3,14 @@
 :root {
   --green-primary: #00d97c;
   --gray-primary: #808080;
-  --blue-primary: #2c80f0;
+  --blue-primary: #8e9caf;
   --blue-secondary: #01b0ff;
   --body-background: #cfdff4;
 }
 
 * {
   font-family: 'Open Sans', sans-serif;
+  color: #000;
 }
 
 html {
