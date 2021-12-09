@@ -8,16 +8,20 @@ footer {
 
 #information01 {
   width: 25%;
-  font-size: .6rem;
-  text-align: center;
+  text-align: left;
 }
+
+
 #information03 {
   width: 25%;
-  font-size: .6rem;
-  text-align: center;
+  text-align: left;
 }
 
 #logoFooter {
   height: 4rem;
   width: 4rem;
-} 
+}
+
+.text_footer {
+    font-size: .6rem;
+}
