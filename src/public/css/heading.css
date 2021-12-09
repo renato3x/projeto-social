@@ -1,0 +1,107 @@
+header#heading {
+  height: 5rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 .5rem;
+  position: relative;
+}
+
+.header-logo {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.title h1 {
+  font-size: 1rem;
+  margin: 0%;
+  color: #123362;
+}
+
+.title p {
+  margin: 0%;
+  font-size: .6rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding-bottom: .5rem;
+}
+
+.icon {
+  align-self: flex-end;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.hamburguer-menu {
+  background: transparent;
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+}
+
+#main-menu {
+  height: calc(100vh - 80px);
+  width: 14rem;
+  background: #3B6296F5;
+  position: absolute;
+  left: -14rem;
+  top: 5rem;
+  transition: left .3s;
+}
+
+.show-main-menu {
+  left: 0 !important;
+}
+
+.navbar {
+  padding: 0;
+  margin-top: 0;
+  padding: .5rem 0;
+}
+
+.navbar-item {
+  list-style: none;
+  border-bottom: 2px solid #fff;
+  padding: .3rem 0;
+}
+
+.navbar-item + .navbar-item {
+  margin-top: .5rem;
+}
+
+.navbar-item a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  height: 100%;
+}
+
+footer {
+  background-color: lightgrey;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#information01 {
+  width: 25%;
+  font-size: .6rem;
+  text-align: center;
+}
+#information03 {
+  width: 25%;
+  font-size: .6rem;
+  text-align: center;
+}
+
+#logoFooter {
+  height: 4rem;
+  width: 4rem;
+}
