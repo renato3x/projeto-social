@@ -11,11 +11,13 @@ header#heading {
 .header-logo {
   height: 3.5rem;
   width: 3.5rem;
+  cursor: pointer;
 }
 
 .title {
   flex-grow: 0;
   margin-left: 0;
+  cursor: pointer;
 }
 
 .title h1 {
@@ -65,7 +67,6 @@ header#heading {
 }
 
 .navbar {
-  padding: 0;
   margin-top: 0;
   padding: .5rem 0;
 }
@@ -98,6 +99,7 @@ header#heading {
   header#heading {
     justify-content: space-between;
     padding: 0 2.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 
   .title {
@@ -121,5 +123,37 @@ header#heading {
     align-self: center;
     width: 1.7rem;
     height: 1.7rem;
+  }
+
+  #main-menu {
+    left: 0;
+    width: 100vw;
+    height: fit-content;
+    transition: none;
+    background: transparent;
+  }
+
+  .navbar {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .navbar-item {
+    border: none;
+    padding: .5rem 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 0px 5px 5px;
+    min-width: 10rem;
+  }
+
+  .navbar-item a {
+    color: #123362;
+    font-weight: 600;
+  }
+
+  .navbar-item + .navbar-item {
+    margin-top: 0;
   }
 }
