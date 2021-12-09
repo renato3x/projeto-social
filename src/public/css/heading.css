@@ -81,3 +81,27 @@ header#heading {
   color: #fff;
   height: 100%;
 }
+
+footer {
+  background-color: lightgrey;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#information01 {
+  width: 25%;
+  font-size: .6rem;
+  text-align: center;
+}
+#information03 {
+  width: 25%;
+  font-size: .6rem;
+  text-align: center;
+}
+
+#logoFooter {
+  height: 4rem;
+  width: 4rem;
+}
