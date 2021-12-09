@@ -13,6 +13,11 @@ header#heading {
   width: 3.5rem;
 }
 
+.title {
+  flex-grow: 0;
+  margin-left: 0;
+}
+
 .title h1 {
   font-size: 1rem;
   margin: 0%;
@@ -42,6 +47,7 @@ header#heading {
   border: none;
   font-size: 0;
   cursor: pointer;
+  display: block;
 }
 
 #main-menu {
@@ -80,4 +86,40 @@ header#heading {
   text-align: center;
   color: #fff;
   height: 100%;
+}
+
+/* pc styles */
+
+@media(min-width: 768px) {
+  .hamburguer-menu {
+    display: none;
+  }
+
+  header#heading {
+    justify-content: space-between;
+    padding: 0 2.5rem;
+  }
+
+  .title {
+    flex-grow: 1;
+    margin-left: 1rem;
+  }
+
+  .title h1 {
+    font-size: 1.5rem;
+  }
+
+  .title p {
+    font-size: .9rem;
+  }
+
+  .icons {
+    padding: 0;
+  }
+
+  .icon {
+    align-self: center;
+    width: 1.7rem;
+    height: 1.7rem;
+  }
 }
