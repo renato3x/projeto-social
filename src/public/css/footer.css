@@ -1,27 +1,31 @@
 footer {
-  background-color: lightgrey;
-  height: 8rem;
+  background-color: #e5e5e5;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
 }
 
-#information01 {
-  width: 25%;
-  text-align: left;
-}
-
-
-#information03 {
-  width: 25%;
-  text-align: left;
-}
-
-#logoFooter {
+.pref-logo {
   height: 4rem;
   width: 4rem;
+  object-fit: contain;
 }
 
-.text_footer {
-    font-size: .6rem;
+.infos {
+  max-width: 6rem;
+}
+
+.info-text {
+  font-size: .6rem;
+  margin: .5rem 0;
+  font-style: normal;
+  text-align: center;
+}
+
+.text-enphasi {
+  display: block;
+  font-size: .65rem;
+  margin-bottom: .1rem;
 }
