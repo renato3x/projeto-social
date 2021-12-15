@@ -12,9 +12,8 @@
     <%- include('../partials/heading.ejs') %>
 
     <% instaPosts.forEach(post => { %>
-      <a href="<%= post.postLink %>" rel="noopener noreferrer" target="_blank">
+      <a href="<%= post.postLink %>">
         <img src="<%= post.imgSrc %>" alt="">
-        clique
       </a>
     <% }) %>
 
