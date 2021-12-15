@@ -6,6 +6,6 @@ module.exports = {
   async index(req, res) {
     const instaPosts = await wss.getInstagramPosts()
 
-    return res.render(path.join(__dirname, '..', 'views', 'main', 'index.ejs'))
+    return res.render(path.join(__dirname, '..', 'views', 'main', 'index.ejs'), { instaPosts })
   }
 }

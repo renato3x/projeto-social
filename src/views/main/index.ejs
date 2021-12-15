@@ -10,6 +10,14 @@
   </head>
   <body>
     <%- include('../partials/heading.ejs') %>
+
+    <% instaPosts.forEach(post => { %>
+      <a href="<%= post.postLink %>" rel="noopener noreferrer" target="_blank">
+        <img src="<%= post.imgSrc %>" alt="">
+        clique
+      </a>
+    <% }) %>
+
     <%- include('../partials/footer.ejs') %>
   </body>
 </html>
