@@ -23,4 +23,6 @@ body {
   box-sizing: border-box;
   min-height: 100vh;
   background: var(--body-background);
+  display: grid;
+  grid-template-rows: 5rem 1fr 8rem;
 }
