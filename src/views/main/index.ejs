@@ -6,17 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/main.index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
     <title>Seducar</title>
+    <style>
+      #map {
+        height: 20rem;
+      }
+    </style>
   </head>
   <body>
     <%- include('../partials/heading.ejs') %>
 
-    <% instaPosts.forEach(post => { %>
-      <a href="<%= post.postLink %>">
-        <img src="<%= post.imgSrc %>" alt="" width="100px" height="100px">
-      </a>
-    <% }) %>
+    <main id="main-content">
+      <section id="highlights">
+        <h2 class="section-title">Destaques</h2>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <% instaPosts.forEach(post => { %>
+              <div class="swiper-slide">
+                <a href="<%= post.postLink %>" target="_blank" rel="noopener noreferrer">
+                  <img src="<%= post.imgSrc %>" alt="" width="200px" height="200px">
+                </a>
+              </div>
+            <% }) %>
+          </div>
+        </div>
+      </section>
+
+      <section id="maps">
+        <h2 class="section-title">Visite-nos</h2>
+
+        <div id="map"></div>
+      </section>
+    </main>
 
     <%- include('../partials/footer.ejs') %>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        }
+      })
+    </script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <script>
+      const map = L.map('map').setView([-4.1616056, -40.9423934], 20)
+
+      L.tileLayer(`https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`, {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map)
+
+      L.marker([-4.1616056, -40.9423934]).addTo(map)
+    </script>
   </body>
 </html>

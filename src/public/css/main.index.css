@@ -1,0 +1,52 @@
+/* carousel styles */
+
+.swiper {
+  width: 20em;
+  height: 20rem;
+  align-self: center;
+}
+
+.swiper-slide {
+  width: 20em;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 20em;
+  height: 20rem;
+}
+
+.swiper-pagination-bullet {
+  color: #123362;
+}
+
+/* main-content */
+
+#main-content {
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+#highlights {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #123362;
+}
+
+#main-content section + section {
+  margin-top: 1.5rem;
+}
+
+@media(min-width: 768px) {
+  #main-content {
+    padding: 3.5rem;
+  }
+}

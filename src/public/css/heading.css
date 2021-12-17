@@ -63,6 +63,7 @@ header#heading {
   top: 5rem;
   transition: left .3s;
   box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
 }
 
 .show-main-menu {
@@ -129,7 +130,7 @@ header#heading {
 
   #main-menu {
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     transition: none;
     background: transparent;
@@ -145,7 +146,7 @@ header#heading {
 
   .navbar-item {
     border: none;
-    padding: .5rem 0;
+    padding: .5rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 0px 0px 5px 5px;
     min-width: 10rem;

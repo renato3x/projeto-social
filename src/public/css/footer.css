@@ -5,6 +5,7 @@ footer {
   justify-content: space-between;
   padding: 1rem 2rem;
   box-sizing: border-box;
+  min-height: 8rem;
 }
 
 .pref-logo {
@@ -28,4 +29,18 @@ footer {
   display: block;
   font-size: .65rem;
   margin-bottom: .1rem;
+}
+
+@media(min-width: 768px) {
+  .infos {
+    max-width: 30rem;
+  }
+
+  .info-text {
+    font-size: .65rem;
+  }
+
+  .text-enphasi {
+    font-size: .7;
+  }
 }
