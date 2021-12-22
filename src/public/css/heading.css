@@ -47,6 +47,10 @@ header#heading {
   height: 1.3rem;
 }
 
+.icon img {
+  width: inherit;
+}
+
 .hamburguer-menu {
   background: transparent;
   border: none;
