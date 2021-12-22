@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Righteous&family=Roboto&display=swap');
+
 footer {
-  background-color: #e5e5e5;
+  background-color: #c4c4c4;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 1rem 2rem;
   box-sizing: border-box;
-  min-height: 8rem;
+  min-height: 14rem;
   position: relative;
 }
 
@@ -18,6 +20,12 @@ footer::before {
   position: absolute;
   left: 0;
   top: -.2rem;
+}
+
+.infos-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .pref-logo {
@@ -43,6 +51,33 @@ footer::before {
   margin-bottom: .1rem;
 }
 
+.project-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.project-content .project-logo {
+  width: 2.5rem;
+}
+
+.project-content .project-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-content .project-name .project-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin: 0;
+  font-size: .9rem;
+}
+
+.project-content .project-name .project-slogan {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8rem;
+}
+
 @media(min-width: 768px) {
   .infos {
     max-width: 30rem;
@@ -54,5 +89,10 @@ footer::before {
 
   .text-enphasi {
     font-size: .7;
+  }
+
+  .pref-logo {
+    width: 6rem;
+    height: 6rem;
   }
 }

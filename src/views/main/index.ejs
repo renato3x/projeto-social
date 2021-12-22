@@ -27,7 +27,7 @@
             <% instaPosts.forEach(post => { %>
               <div class="swiper-slide">
                 <a href="<%= post.postLink %>" target="_blank" rel="noopener noreferrer">
-                  <img src="<%= post.imgSrc %>" alt="" width="200px" height="200px">
+                  <img src="<%= post.imgSrc %>" alt="">
                 </a>
               </div>
             <% }) %>
@@ -48,7 +48,7 @@
       const swiper = new Swiper('.swiper', {
         loop: true,
         autoplay: {
-          delay: 2500,
+          delay: 4000,
           disableOnInteraction: false,
         }
       })

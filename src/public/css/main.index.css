@@ -1,13 +1,14 @@
 /* carousel styles */
 
 .swiper {
-  width: 20em;
+  width: 20rem;
   height: 20rem;
   align-self: center;
+  position: relative;
 }
 
 .swiper-slide {
-  width: 20em;
+  width: 20rem;
   height: 20rem;
   display: flex;
   justify-content: center;
@@ -15,7 +16,7 @@
 }
 
 .swiper-slide img {
-  width: 20em;
+  width: 20rem;
   height: 20rem;
 }
 

@@ -1,2 +1,3 @@
 node_modules
-*.jpg
+src/public/highlights/*/*.jpg
+src/public/highlights/*/*.png
