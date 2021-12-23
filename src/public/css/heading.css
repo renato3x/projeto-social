@@ -139,8 +139,9 @@ header#heading {
     width: 100%;
     height: fit-content;
     transition: none;
-    background: transparent;
     box-shadow: none;
+    background: #fff;
+    box-shadow: 0px 3px 11px -4px rgba(0,0,0,0.82);
   }
 
   .navbar {
@@ -153,7 +154,6 @@ header#heading {
   .navbar-item {
     border: none;
     padding: .5rem;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 0px 0px 5px 5px;
     min-width: 10rem;
   }
