@@ -17,7 +17,11 @@
 }
 
 .school-card .school-logo {
-  width: 7rem;
+  width: 10rem;
+}
+
+.school-logo{
+  width: 100%;
 }
 
 .school-card .school-infos {
