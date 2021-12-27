@@ -9,5 +9,11 @@ module.exports = {
   },
   escolas(req, res){
     return res.render(path.join(__dirname, '..', 'views', 'main', 'escolas.ejs'))
+  },
+  projetosEProgramas(req, res){
+    return res.render(path.join(__dirname,'..', 'views', 'main', 'projetosEProgramas.ejs'))
+  },
+  sobre(req, res){
+    return res.render(path.join(__dirname,'..', 'views', 'main', 'sobre.ejs'))
   }
 }
