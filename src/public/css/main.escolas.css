@@ -22,12 +22,13 @@
 .school-card .school-logo {
   display: block;
   width: 7.5rem;
+  object-fit: cover;
 }
 
 .school-card .school-infos {
   flex-grow: 1;
   height: 100%;
-  margin-left: .3rem;
+  margin-left: .5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
