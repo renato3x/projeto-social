@@ -14,7 +14,8 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "fs-extra": "^10.0.0",
-    "instagram-scraping": "^1.0.17"
+    "instagram-scraping": "^1.0.17",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
