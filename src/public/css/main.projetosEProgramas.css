@@ -1,0 +1,22 @@
+#main-content {
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+p, strong, abbr {
+  color: #123362;
+}
+
+#main-content p {
+  text-align: justify;
+}
+
+#main-content abbr {
+  text-decoration: none;
+}
+
+@media(min-width: 768px) {
+  #main-content {
+    padding: 4rem 15rem;
+  }  
+}
