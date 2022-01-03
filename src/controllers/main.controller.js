@@ -12,8 +12,5 @@ module.exports = {
   },
   projetosEProgramas(req, res){
     return res.render(path.join(__dirname,'..', 'views', 'main', 'projetosEProgramas.ejs'))
-  },
-  sobre(req, res){
-    return res.render(path.join(__dirname,'..', 'views', 'main', 'sobre.ejs'))
   }
 }
